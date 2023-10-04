@@ -45,5 +45,5 @@ app.use("/api/v1/bdpbrgys", bdpBrgysRoute);
 app.use("/api/v1/events", ctgEventsRoute);
 
 app.listen(PORT, () => {
-  console.log(`server is running at http://localhost:${PORT}`);
+  console.log(`server is running at http://${process.env.URL}:${PORT}`);
 });

@@ -107,7 +107,7 @@ const update = async (req, res) => {
     type,
     rpsb_deployment_status,
   } = req.body;
-  const results = await pool.query(query.update, [
+  await pool.query(query.update, [
     unit_reported,
     source_of_report,
     date_of_report,

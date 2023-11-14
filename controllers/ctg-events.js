@@ -139,7 +139,7 @@ const update = async (req, res) => {
 const remove = async (req, res) => {
   const id = parseInt(req.params.id);
   try {
-    const results = await pool.query(query.delete, [id]);
+    await pool.query(query.delete, [id]);
     res
       .status(200)
       .json({ message: `Sucessfully deleted data with ID: ${id}` });

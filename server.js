@@ -39,10 +39,12 @@ app.get("/", (req, res) => {
 const rpsbDeploymentRoute = require("./routes/rpsbdeployment");
 const bdpBrgysRoute = require("./routes/bdp-brgys");
 const ctgEventsRoute = require("./routes/ctg-events");
+const incidents = require("./routes/incidents");
 
 app.use("/api/v1/rpsbdeployment", rpsbDeploymentRoute);
 app.use("/api/v1/bdpbrgys", bdpBrgysRoute);
 app.use("/api/v1/events", ctgEventsRoute);
+app.use("/api/v1/incidents", incidents);
 
 app.listen(PORT, () => {
   console.log(`server is running at http://${process.env.URL}:${PORT}`);

@@ -12,5 +12,5 @@ module.exports = {
   delete: "DELETE FROM events WHERE id = $1",
 
   createTable:
-    "CREATE TABLE IF NOT EXISTS events(id SERIAL unit_reported VARCHAR(30), source_of_report VARCHAR(30), date_of_report DATE date_of_activity DATE, evaluation VARCHAR(30), type_of_activity VARCHAR(50) NOT NULL, activity VARCHAR(30), enemy_unit VARCHAR(50), strength VARCHAR(30), leader VARCHAR(50), position VARCHAR(50), sitio VARCHAR(50), brgy VARCHAR(50), municipality VARCHAR(30), province VARCHAR(30), details_of_activity TEXT, mgrs VARCHAR(30), latitude DOUBLE NOT NULL, longitude DOUBLE NOT NULL, bdp_status VARCHAR(10), gf_vertical_units VARCHAR(100), type VARCHAR(5), rpsb_deployment_status VARCHAR(25) PRIMARY KEY(id))",
+    "CREATE TABLE IF NOT EXISTS events(id SERIAL, unit_reported VARCHAR(30), source_of_report VARCHAR(30), date_of_report DATE date_of_activity DATE, evaluation VARCHAR(30), type_of_activity VARCHAR(50) NOT NULL, activity VARCHAR(30), enemy_unit VARCHAR(50), strength VARCHAR(30), leader VARCHAR(50), position VARCHAR(50), sitio VARCHAR(50), brgy VARCHAR(50), municipality VARCHAR(30), province VARCHAR(30), details_of_activity TEXT, mgrs VARCHAR(30), latitude DOUBLE NOT NULL, longitude DOUBLE NOT NULL, bdp_status VARCHAR(10), gf_vertical_units VARCHAR(100), type VARCHAR(5), rpsb_deployment_status VARCHAR(25), PRIMARY KEY(id))",
 };

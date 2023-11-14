@@ -12,5 +12,5 @@ module.exports = {
   delete: "DELETE FROM bdp_brgys WHERE id = $1",
 
   createTable:
-    "CREATE TABLE IF NOT EXISTS bdp_brgys(id SERIAL, province VARCHAR(30), city_municipality VARCHAR(50), barangay VARCHAR(50), region VARCHAR(5) PRIMARY KEY(id))",
+    "CREATE TABLE IF NOT EXISTS bdp_brgys(id SERIAL, province VARCHAR(30), city_municipality VARCHAR(50), barangay VARCHAR(50), region VARCHAR(5), PRIMARY KEY(id))",
 };
